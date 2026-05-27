@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 import {
   FaReact,
   FaNodeJs,
@@ -14,6 +15,7 @@ import project3 from '../assets/finance.jpeg'
 
 
 export default function Projects() {
+  
 
 const projects = [
  
@@ -23,6 +25,8 @@ const projects = [
       'A modern movie ticket booking site with authentication, booking movie, after booking confirmation mail, checkout, profile and mobile freindly design.',
     image: project2,
     tech: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind', 'Framer Motion','Sweet alerts'],
+    link:'https://frontend-movie-icjc.vercel.app/',
+    code:'https://github.com/yogeshbadgujar524-max/Movie-Ticket-Booking-System-Project.git'
   },
     {
     title: 'E-Commerce Platform',
@@ -97,14 +101,17 @@ const projects = [
         
 
           <div className="flex gap-3">
-            <motion.button
+            <a href={project.link} target="_blank" >
+            <motion.button 
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-purple-600 hover:bg-purple-500 px-4 py-2 rounded-xl text-lg font-medium transition"
-            >
+              >
               Demo <FaExternalLinkAlt className="text-sm" />
             </motion.button>
+              </a>
 
+              <a href={project.code} target="_blank" >
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.95 }}
@@ -112,6 +119,7 @@ const projects = [
             >
               Code <FaGithub className="text-sm" />
             </motion.button>
+            </a>
           </div>
         </div>
       </motion.div>
