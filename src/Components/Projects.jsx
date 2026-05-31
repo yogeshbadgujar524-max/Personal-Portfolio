@@ -34,6 +34,8 @@ const projects = [
       'A modern e-commerce application with authentication, cart system, and online payments.',
     image: project1,
     tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
+    link:'https://e-commerce-ten-rho-78.vercel.app',
+    code:'https://github.com/yogeshbadgujar524-max/E-commerce.git'
   },
   {
     title: 'Finance Dahboard',
