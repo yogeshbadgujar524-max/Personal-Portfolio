@@ -31,10 +31,10 @@ const projects = [
     {
     title: 'E-Commerce Platform',
     description:
-      'A modern e-commerce application with authentication, cart system, and online payments.',
+      'built a full-stack E-Commerce platform using React.js, Redux Toolkit, Node.js, Express.js, MongoDB, JWT Authentication and Socket.IO. The application includes role-based authentication, product management, order management, real-time notifications, sales analytics dashboard and payment integration',
     image: project1,
     tech: ['React', 'Node.js', 'Express.js', 'MongoDB'],
-    link:'https://e-commerce-ten-rho-78.vercel.app',
+    link:'https://e-commerce-frontend-q3cm.vercel.app',
     code:'https://github.com/yogeshbadgujar524-max/E-commerce.git'
   },
   {
